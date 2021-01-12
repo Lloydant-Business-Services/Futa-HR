@@ -1,0 +1,362 @@
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+.mdal2{
+  max-width: 800px!important;
+  /* margin-left: -170px!important; */
+  padding: 30px;
+}
+
+.navva{
+  max-width: 200px!important;
+}
+.cust-side{
+  background-color: #282c34;
+  padding: 30px;
+  width: 300px;
+  color:ghostwhite;
+  /* position: sticky; */
+  z-index: 29!important;
+  margin-top: 110px!important;
+  height: auto!important;
+}
+.menuss a, i{
+  /* color: ghostwhite!important; */
+}
+#log-o{
+  color: black!important;
+}
+
+#sidenav-main{
+  /* background-color: #609!important; */
+  /* background-color: #bb63c3!important; */
+  background: linear-gradient(0deg, #ba54f5 0%, #e14eca 100%);
+
+
+  /* padding-top: 10px; */
+}
+
+#topnav-main{
+  /* background-color: #bb63c3!important; */
+  background-color: #9a2387!important;
+
+}
+
+.btn-success2{
+  background-color: rgb(17, 119, 97)!important;
+  color: white!important;
+}
+
+.subo li{
+  margin-bottom: -20px!important;
+}
+
+.econs{
+  color: #1c3f7c!important;
+}
+
+.econs2{
+  color: #1c3f7c!important;
+}
+
+
+.mCrd{
+  width: 700px!important;
+    padding-left: 90px!important;
+}
+
+.btn-info2 {
+  color: #fff!important;
+  /* border-color: #11cdef; */
+  background-color: #5cb9bd!important;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08)!important;
+}
+.new-badge{
+  background-color: rgb(218, 44, 78)!important;
+  color: white!important;
+}
+.ttt{
+  color: #c0c4ca46;
+}
+
+@media (min-width: 576px){
+
+.myModal {
+    max-width: 1100px!important;
+    margin: 1.75rem auto;
+}}
+
+
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+/* Style the Image Used to Trigger the Modal */
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modall {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-contentt {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-contentt, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+
+
+
+/* The Overlay (background) */
+.overlay {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+  height: 100%;
+  width: 0%;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: rgb(18, 20, 43); /* Black fallback color */
+  background-color:rgb(43 43 63 / 90%); /* Black w/opacity */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  z-index: 99999999!important;
+}
+.sool{
+  color:grey;
+}
+
+
+/* Position the content inside the overlay */
+.overlay-content {
+  position: relative;
+  top: 1%; /* 25% from the top */
+  width: 100%; /* 100% width */
+  text-align: center; /* Centered text/links */
+  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block; /* Display block instead of inline */
+  transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  left:700px;
+  /* float: right; */
+  font-size: 60px;
+}
+#set-up-hide{
+  display: block!important;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  background-color: rgb(22, 206, 83);
+  border-radius: 50%;
+  display: inline-block;
+}
+.staff-list-func{
+  display: block;
+}
+
+.dateCard{
+  border:2px solid rgba(142, 160, 206, 0.418)!important; 
+  background:rgba(128, 128, 128, 0.096)!important
+}
+.crdHeader{
+  /* background:transparent!important; */
+  border:2px solid rgba(142, 160, 206, 0.418)!important; 
+
+  /* border-bottom:1px solid grey!important; */
+
+}
+
+.custom-success{
+  /* background: rgb(21, 87, 46)!important; */
+}
+
+.sofia {
+  font-family: Quicksand, sans-serif!important;
+  font-weight: 900!important;
+
+}
+.sofia-head {
+  font-family: Quicksand, sans-serif!important;
+  font-weight: 700!important
+
+}
+
+p a {
+  font-family: Quicksand, sans-serif!important;
+}
+
+h1 h2 h3 h4 h5 h6 {
+  font-family: Quicksand, sans-serif!important;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media only screen and (max-width: 500px) {
+  #set-up-hide{
+    display: none!important
+  }
+  .staff-list-func{
+    display: none!important;
+  }
+  .dateCard{
+    border:2px solid rgba(142, 160, 206, 0.418)!important; 
+    background:rgba(128, 128, 128, 0.096)!important;
+    display: block!important;
+  }
+
+  .mdal2{
+    width: 100%!important;
+    /* margin-left: 10px!important; */
+    padding: 30px;
+  }
+
+
+  .sofia {
+    font-family: Quicksand, sans-serif!important;
+  }
+  
+  p a {
+    font-family: Quicksand, sans-serif!important;
+  }
+  
+  h1 h2 h3 h4 h5 h6 {
+    font-family: Quicksand, sans-serif;
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-contentt {
+    width: 100%;
+  }
+}
